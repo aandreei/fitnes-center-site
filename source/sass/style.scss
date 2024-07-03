@@ -1,4 +1,23 @@
-// Vendor
-// ---------------------------------
-
+//vendor
 @import "vendor/normalize";
+
+//global
+@import "global/variables";
+@import "global/visually-hidden";
+@import "global/mixins";
+@import "global/button";
+
+//blocks
+@import "blocks/page-body";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/price";
+@import "blocks/games";
+@import "blocks/juri";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/footer";
