@@ -8,43 +8,338 @@
   </head>
   <body class="page-body">
     <main>
+
+      <!-- секция главного блока -->
       <section class="hero" data-test="hero">
         <header class="hero__header header">
-
+          <picture>
+            <img class="header__logo" src="" alt="">
+          </picture>
+          <a class="header__link-number" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
         </header>
+        <p class="hero__text-city">Омск</p>
+        <p class="hero__description">Тренажёрный зал Групповые занятиz Кардио-зона</p>
+        <h1 class="hero__title">Фитнес центр</h1>
+        <button class="hero__button" type="button">Купить абонемент</button>
       </section>
+
+      <!-- секция с описанием продукта -->
       <section class="about" data-test="about">
-
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <span class="about__description">Просторный зал площадью 900 кв/м</ы>
+        <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <picture>
+          <img class="about__image" src="" alt="">
+        </picture>
+        <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" loading="lazy"></iframe>
       </section>
+
+      <!-- секция с абонементами -->
       <section class="price" data-test="price">
-
+        <h2 class="price__title">Абонементы</h2>
+        <ul class="price__list-time">
+          <li class="price__item-time">
+            <button class="price__button-time" type="button">1 месяц</button>
+          </li>
+          <li class="price__item-time">
+            <button class="price__button-time" type="button">6 месяцев</button>
+          </li>
+          <li class="price__item-time">
+            <button class="price__button-time" type="button">12 месяцев</button>
+          </li>
+        </ul>
+        <ul class="price__list-passes">
+          <li class="price__item-passes">
+            <h3 class="price__item-title">С тренером</h3>
+            <p class="price__item-description">12 занятий</p>
+            <span class="price__item-price">5000&#8381;</span>
+            <button class="price__button-buy" type="button">Купить абонемент</button>
+          </li>
+          <li class="price__item-passes">
+            <h3 class="price__item-title">Дневной</h3>
+            <p class="price__item-description">с 8:00 до 17:00</p>
+            <span class="price__item-price">1700&#8381;</span>
+            <button class="price__button-buy" type="button">Купить абонемент</button>
+          </li>
+          <li class="price__item-passes">
+            <h3 class="price__item-title">Полный день</h3>
+            <p class="price__item-description">с 8:00 до 22:00</p>
+            <span class="price__item-price">2700&#8381;</span>
+            <button class="price__button-buy" type="button">Купить абонемент</button>
+          </li>
+        </ul>
       </section>
+
+      <!-- секция об анонсе игр -->
       <section class="games" data-test="games">
-
+        <h2 class="games__title">SUPER GAMES</h2>
+        <p class="games__parametr">Дата</p>
+        <span class="games__value-number">7</span>
+        <span class="games__value-data">Марта 2019</span>
+        <p class="games__parametr">Время</p>
+        <span class="games__value-time">12:00</span>
+        <p class="games__description">Ежегодные соревнования по CrossFit</p>
+        <button class="games__button" type="button">заполнить заявку</button>
+        <picture>
+          <img class="games__image" src="" alt="">
+        </picture>
       </section>
+
+      <!-- секция с жюри -->
       <section class="juri" data-test="juri">
-
+        <h2 class="juri__title">Жюри</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <img class="swiper-slide__image" src="" alt="">
+              </picture>
+              <p class="swiper-slide__text"></p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <img class="swiper-slide__image" src="" alt="">
+              </picture>
+              <p class="swiper-slide__text"></p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <img class="swiper-slide__image" src="" alt="">
+              </picture>
+              <p class="swiper-slide__text"></p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <img class="swiper-slide__image" src="" alt="">
+              </picture>
+              <p class="swiper-slide__text"></p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
+
+      <!-- секция с преимуществами -->
       <section class="features" data-test="features">
-
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul>
+          <li>
+            <span>900</span>
+            <span>кв/м</span>
+            <p>Площадь</p>
+            <p>Занимайтесь без очередей и толкучки</p>
+          </li>
+          <li>
+            <span>70</span>
+            <span>машин</span>
+            <p>Собственная парковка</p>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+          <li>
+            <span>100</span>
+            <p>Тренажёров</p>
+            <p>Современные тренажёры на все группы мышц</p>
+          </li>
+          <li>
+            <span>350</span>
+            <span>мест</span>
+            <p>Комфорт</p>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+          <li>
+            <span>5+</span>
+            <span>лет</span>
+            <p>Тренерский опыт</p>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+        </ul>
       </section>
+
+      <!-- секция с акциями -->
       <section class="offers" data-test="offers">
-
+        <h2 class="offers__title">Акции</h2>
+        <div>
+          <div>
+            <p>Год</p>
+            <span>4999</span>
+            <p>Безлимитный абонемент в тренажёрный зал</p>
+            <p class="offers__detail">подробнее</p>
+          </div>
+          <picture>
+            <img src="" alt="">
+          </picture>
+        </div>
+        <ul class="offers__list">
+          <li class="offers__item">
+            <p>Месяц бесплатно</p>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <p class="offers__detail">подробнее</p>
+          </li>
+          <li class="offers__item">
+            <p>Скидка 20%</p>
+            <p>Корпоративный фитнес с командой</p>
+            <p class="offers__detail">подробнее</p>
+          </li>
+        </ul>
       </section>
+
+      <!-- секция с частыми вопросами -->
       <section class="faq" data-test="faq">
-
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <ul class="faq__list-navigation">
+          <li class="faq__item-navigation faq__item-navigation--active">Центр</li>
+          <li class="faq__item-navigation">Абонемент</li>
+          <li class="faq__item-navigation">Услуги</li>
+          <li class="faq__item-navigation">Правила</li>
+        </ul>
+        <ul class="faq__list-center">
+          <li class="faq__item-center">
+            <p>Как стать членом фитнес-центра?</p>
+            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+          </li>
+          <li class="faq__item-center">
+            <p>Где можно посмотреть расписание?</p>
+            <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+          </li>
+          <li class="faq__item-center">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-center">
+            <p></p>
+            <p></p>
+          </li>
+        </ul>
+        <ul class="faq__list-abonement">
+          <li class="faq__item-abonement">
+            <p>Занятия с тренером входят в абонемент?</p>
+            <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+          </li>
+          <li class="faq__item-abonement">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-abonement">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-abonement">
+            <p></p>
+            <p></p>
+          </li>
+        </ul>
+        <ul class="faq__list-services">
+          <li class="faq__item-services">
+            <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
+            <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+          </li>
+          <li class="faq__item-services">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-services">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-services">
+            <p></p>
+            <p></p>
+          </li>
+        </ul>
+        <ul class="faq__list-rules">
+          <li class="faq__item-rules">
+            <p>Есть в фитнес-центре дресс-код?</p>
+            <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+          </li>
+          <li class="faq__item-rules">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-rules">
+            <p></p>
+            <p></p>
+          </li>
+          <li class="faq__item-rules">
+            <p></p>
+            <p></p>
+          </li>
+        </ul>
       </section>
+
+      <!-- секция с отзывами -->
       <section class="reviews" data-test="reviews">
-
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <img src="" alt="">
+              </picture>
+              <span>Анна Орлова</span>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
+
+      <!-- секция для оформления заявки -->
       <section class="form" data-test="form">
-
+        <h2 class="visually-hidden">Оставьте заявку</h2>
+        <p class="form__description">Бесплатное занятие</p>
+        <form action="post">
+          <input type="text" placeholder="Имя" required>
+          <input type="tel" placeholder="Телефон" required>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
+
+      <!-- подвал страницы -->
       <section class="footer" data-test="footer">
-
+        <h2 class="footer__title">Контакты</h2>
+        <h3 class="footer__subtitle">Адрес:</h3>
+        <p class="footer__description">г. Омск, ул. 60 лет Октября, 7</p>
+        <h3 class="footer__subtitle">График работы:</h3>
+        <p class="footer__description">Пн-Вс: с 8:00 до 22:00</p>
+        <h3 class="footer__subtitle">Телефон:</h3>
+        <a class="footer__link" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
+        <h3 class="footer__subtitle">Email:</h3>
+        <p class="footer__description">oмск@supergym.ru</p>
+        <picture>
+          <img class="footer__logo" src="" alt="">
+        </picture>
+        <ul class="footer__list-navigation">
+          <li class="footer__item-navigation">Услуги</li>
+          <li class="footer__item-navigation">Абонементы</li>
+          <li class="footer__item-navigation">Акции</li>
+          <li class="footer__item-navigation">Тренеры</li>
+          <li class="footer__item-navigation">Тренеры</li>
+        </ul>
+        <ul class="footer__list-social">
+          <li class="footer__item-social">
+            <p class="visually-hidden">Вконтакте</p>
+            <a href=""></a>
+          </li>
+          <li class="footer__item-social">
+            <p class="visually-hidden">Одноклассники</p>
+            <a href=""></a>
+          </li>
+          <li class="footer__item-social">
+            <p class="visually-hidden">Reddit</p>
+            <a href=""></a>
+          </li>
+        </ul>
       </section>
+
     </main>
 
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
+
