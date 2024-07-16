@@ -1,0 +1,61 @@
+.about {
+  background-color: $primary-white;
+}
+
+.about__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0 15px;
+}
+
+.about__description {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $primary-dark;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0 15px;
+}
+
+.about__text {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0 15px;
+}
+
+.about__img {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.video-wrapper{
+  position: relative;
+  display: inline-block;
+}
+.video-overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: image-set("../../img/background/video-mobile.png" 1x, "../../img/background/video-mobile@2x.png" 2x);
+  background-size: cover;
+}
+
+.video-button {
+  margin-left: 123px;
+  margin-top: 50px;
+}
