@@ -13,14 +13,22 @@
       <section class="hero" data-test="hero">
         <header class="hero__header header">
           <picture>
-            <img class="header__logo" src="" alt="">
+            <source type="image/svg+xml" width="130" height="26" srcset="../source/img/logo/logo.svg" media="(min-width: 1440px)">
+            <source type="image/svg+xml" width="110" height="22" srcset="../source/img/logo/logo.svg" media="(min-width: 768px)">
+            <img class="header__logo-pictures" src="../source/img/logo/logo.svg" loading="lazy" width="100" height="20" alt="Логотип компании SUPERGYM">
           </picture>
           <a class="header__link-number" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
         </header>
         <p class="hero__text-city">Омск</p>
-        <p class="hero__description">Тренажёрный зал Групповые занятиz Кардио-зона</p>
+        <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
         <h1 class="hero__title">Фитнес центр</h1>
         <button class="hero__button" type="button">Купить абонемент</button>
+        <picture>
+          <source type="image/webp" media="(min-width:1440px)" srcset="../source/img/hero/hero-img-desktop.webp 1x, ../source/img/hero/hero-img-desktop@2x.webp 2x" width="500" height="524">
+          <source type="image/webp" media="(min-width:768px)" srcset="../source/img/hero/hero-img-tablet.webp 1x, ../source/img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
+          <source type="image/png" media="(min-width:1440px)" srcset="../source/img/hero/hero-img-desktop.png 1x, ../source/img/hero/hero-img-desktop@2x.png 2x" width="500" height="524">
+          <img class="hero__img" src="../source/img/hero/hero-img-tablet.png" loading="lazy" srcset="../source/img/hero/hero-img-tablet@2x.png 2x" width="324" height="390" alt="Спортивный мужчина">
+        </picture>
       </section>
 
       <!-- секция с описанием продукта -->
@@ -29,7 +37,12 @@
         <span class="about__description">Просторный зал площадью 900 кв/м</ы>
         <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
         <picture>
-          <img class="about__image" src="../source/img/background/" alt="">
+          <source type="image/webp" media="(min-width:1440px)" srcset="../source/img/background/main-img-desktop.webp 1x, ../source/img/background/main-img-desktop@2x.webp 2x" width="660" height="400">
+          <source type="image/webp" media="(min-width:768px)" srcset="../source/img/background/main-img-tablet.webp 1x, ../source/img/background/main-img-tablet@2x.webp 2x" width="678" height="345">
+          <source type="image/webp" media="(min-width:320px)" srcset="../source/img/background/main-img-mobile.webp 1x, ../source/img/background/main-img-mobile@2x.webp 2x" width="320" height="280">
+          <source type="image/png" media="(min-width:1440px)" srcset="../source/img/background/main-img-desktop.png 1x, ../source/img/background/main-img-desktop@2x.png 2x" width="660" height="400">
+          <source type="image/png" media="(min-width:768px)" srcset="../source/img/background/main-img-tablet.png 1x, ../source/img/background/main-img-tablet@2x.png 2x" width="678" height="345">
+          <img class="about__img" src="../source/img/background/main-img-mobile.png" loading="lazy" srcset="../source/img/background/main-img-mobile@2x.png 2x" width="320" height="280" alt="Тренажерный зал SUPERGYM">
         </picture>
         <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" loading="lazy"></iframe>
       </section>
@@ -81,7 +94,12 @@
         <p class="games__description">Ежегодные соревнования по CrossFit</p>
         <button class="games__button" type="button">заполнить заявку</button>
         <picture>
-          <img class="games__image" src="" alt="">
+          <source type="image/webp" media="(min-width:1440px)" srcset="../source/img/background/games-man-desktop.webp 1x, ../source/img/background/games-man-desktop@2x.webp 2x" width="660" height="500">
+          <source type="image/webp" media="(min-width:768px)" srcset="../source/img/background/games-man-tablet.webp 1x, ../source/img/background/games-man-tablet@2x.webp 2x" width="378" height="348">
+          <source type="image/webp" media="(min-width:320px)" srcset="../source/img/background/games-man-mobile.webp 1x, ../source/img/background/games-man-mobile@2x.webp 2x" width="290" height="290">
+          <source type="image/png" media="(min-width:1440px)" srcset="../source/img/background/games-man-desktop.png 1x, ../source/img/background/games-man-desktop@2x.png 2x" width="660" height="500">
+          <source type="image/png" media="(min-width:768px)" srcset="../source/img/background/games-man-tablet.png 1x, ../source/img/background/games-man-tablet@2x.png 2x" width="378" height="348">
+          <img class="games__img" src="../source/img/background/games-man-mobile.png" loading="lazy" srcset="../source/img/background/games-man-mobile@2x.png 2x" width="290" height="290" alt="Спортивный мужчина">
         </picture>
       </section>
 
@@ -92,25 +110,29 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
-                <img class="swiper-slide__image" src="" alt="">
+                <source type="image/webp" media="(min-width:320px)" srcset="../source/img/juri/juri-anna.webp 1x, ../source/img/juri/juri-anna@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__image" src="../source/img/juri/juri-anna.jpg" loading="lazy" srcset="../source/img/juri/juri-anna@2x.jpg 2x" width="260" height="300" alt="Член жюри - Анна">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
             <div class="swiper-slide">
               <picture>
-                <img class="swiper-slide__image" src="" alt="">
+                <source type="image/webp" media="(min-width:320px)" srcset="../source/img/juri/juri-alexei.webp 1x, ../source/img/juri/juri-alexei@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__image" src="../source/img/juri/juri-alexei.jpg" loading="lazy" srcset="../source/img/juri/juri-alexei@2x.jpg 2x" width="260" height="300" alt="Член жюри - Алексей">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
             <div class="swiper-slide">
               <picture>
-                <img class="swiper-slide__image" src="" alt="">
+                <source type="image/webp" media="(min-width:320px)" srcset="../source/img/juri/juri-alexander@2x.webp 1x, ../source/img/juri/juri-alexander@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__image" src="../source/img/juri/juri-alexander.jpg" loading="lazy" srcset="../source/img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Член жюри - Александр">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
             <div class="swiper-slide">
               <picture>
-                <img class="swiper-slide__image" src="" alt="">
+                <source type="image/webp" media="(min-width:320px)" srcset="../source/img/juri/juri-maria@2x.webp 1x, ../source/img/juri/juri-maria@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__image" src="../source/img/juri/juri-maria.jpg" loading="lazy" srcset="../source/img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Член жюри - Мария">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
@@ -169,7 +191,12 @@
             <p class="offers__detail">подробнее</p>
           </div>
           <picture>
-            <img src="" alt="">
+            <source type="image/webp" media="(min-width:1440px)" srcset="../source/img/background/girl-img-desktop.webp 1x, ../source/img/background/girl-img-desktop@2x.webp 2x" width="280" height="460">
+            <source type="image/webp" media="(min-width:768px)" srcset="../source/img/background/girl-img-tablet.webp 1x, ../source/img/background/girl-img-tablet@2x.webp 2x" width="400" height="462">
+            <source type="image/webp" media="(min-width:320px)" srcset="../source/img/background/girl-img-mobile.webp 1x, ../source/img/background/girl-img-mobile@2x.webp 2x" width="320" height="360">
+            <source type="image/png" media="(min-width:1440px)" srcset="../source/img/background/girl-img-desktop.png 1x, ../source/img/background/girl-img-desktop@2x.png 2x" width="280" height="460">
+            <source type="image/png" media="(min-width:768px)" srcset="../source/img/background/girl-img-tablet.png 1x, ../source/img/background/girl-img-tablet@2x.png 2x" width="400" height="462">
+            <img class="offers__image" src="../source/img/background/girl-img-mobile.png" loading="lazy" srcset="../source/img/background/girl-img-mobile@2x.png 2x" width="320" height="360" alt="">
           </picture>
         </div>
         <ul class="offers__list">
@@ -276,7 +303,10 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
-                <img src="" alt="">
+                <source type="image/webp" media="(min-width:768px)" srcset="../source/img/feedback/icon-user-tablet.webp 1x, ../source/img/feedback/icon-user-tablet@2x.webp 2x" width="80" height="80">
+                <source type="image/webp" media="(min-width:320px)" srcset="../source/img/feedback/icon-user-mobile.webp 1x, ../source/img/feedback/icon-user-mobile@2x.webp 2x" width="68" height="68">
+                <source type="image/png" media="(min-width:768px)" srcset="../source/img/feedback/icon-user-tablet.png 1x, ../source/img/feedback/icon-user-tablet@2x.png 2x" width="80" height="80">
+                <img class="swiper-slide__image" src="../source/img/feedback/icon-user-mobile.png" loading="lazy" srcset="../source/img/feedback/icon-user-mobile@2x.png 2x" width="68" height="68" alt="Аватар пользователя оставившего отзыв">
               </picture>
               <span>Анна Орлова</span>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
