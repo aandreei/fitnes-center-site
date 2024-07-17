@@ -39,7 +39,7 @@
       <section class="about" data-test="about">
         <h2 class="about__title">Тренажёрный зал</h2>
         <span class="about__description">Просторный зал площадью 900 кв/м</span>
-        <p class="about__text">Supergym – самый большой фитнес центр<br>
+        <p>Supergym – самый большой фитнес центр<br>
           за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br>
           для всех спортсменов.</p>
         <picture>
@@ -113,14 +113,20 @@
 
       <!-- секция об анонсе игр -->
       <section class="games" data-test="games">
-        <h2 class="games__title">SUPER GAMES</h2>
-        <p class="games__parametr">Дата</p>
-        <span class="games__value-number">7</span>
-        <span class="games__value-data">Марта 2019</span>
-        <p class="games__parametr">Время</p>
-        <span class="games__value-time">12:00</span>
-        <p class="games__description">Ежегодные соревнования по CrossFit</p>
-        <button class="games__button" type="button">заполнить заявку</button>
+        <div class="games__wrapper">
+          <h2 class="games__title">SUPER GAMES</h2>
+          <div class="games__wrapper-data">
+            <p class="games__parametr">Дата</p>
+            <span class="games__value-number">7</span>
+            <span class="games__value-data">Марта 2019</span>
+          </div>
+          <div class="games__wrapper-time">
+            <p class="games__parametr">Время</p>
+            <span class="games__value-time">12:00</span>
+          </div>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <button class="games__button button" type="button">заполнить заявку</button>
+        </div>
         <picture>
           <source type="image/webp" media="(min-width:1440px)" srcset="img/background/games-man-desktop.webp 1x, img/background/games-man-desktop@2x.webp 2x" width="660" height="500">
           <source type="image/webp" media="(min-width:768px)" srcset="img/background/games-man-tablet.webp 1x, img/background/games-man-tablet@2x.webp 2x" width="378" height="348">
@@ -146,21 +152,21 @@
             <div class="swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-alexei.webp 1x, img/juri/juri-alexei@2x.webp 2x" width="260" height="300">
-                <img class="swiper-slide__image" src="img/juri/juri-alexei.jpg" loading="lazy" srcset="img/juri/juri-alexei@2x.jpg 2x" width="260" height="300" alt="Член жюри - Алексей">
+                <img class="swiper-slide__image swiper-slide__image--other" src="img/juri/juri-alexei.jpg" loading="lazy" srcset="img/juri/juri-alexei@2x.jpg 2x" width="260" height="300" alt="Член жюри - Алексей">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
             <div class="swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-alexander@2x.webp 1x, img/juri/juri-alexander@2x.webp 2x" width="260" height="300">
-                <img class="swiper-slide__image" src="img/juri/juri-alexander.jpg" loading="lazy" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Член жюри - Александр">
+                <img class="swiper-slide__image swiper-slide__image--other" src="img/juri/juri-alexander.jpg" loading="lazy" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Член жюри - Александр">
               </picture>
-              <p class="swiper-slide__text"></p>
+              <p class="swiper-slide__text">Анна Павлова</p>
             </div>
             <div class="swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-maria@2x.webp 1x, img/juri/juri-maria@2x.webp 2x" width="260" height="300">
-                <img class="swiper-slide__image" src="img/juri/juri-maria.jpg" loading="lazy" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Член жюри - Мария">
+                <img class="swiper-slide__image swiper-slide__image--other" src="img/juri/juri-maria.jpg" loading="lazy" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Член жюри - Мария">
               </picture>
               <p class="swiper-slide__text"></p>
             </div>
