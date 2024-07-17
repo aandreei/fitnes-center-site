@@ -3,6 +3,6 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-document.querySelector('.video-overlay').onclick = function(){
+document.querySelector('.about_video-overlay').onclick = function(){
   this.style.display = 'none';
 };

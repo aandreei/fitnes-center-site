@@ -50,13 +50,7 @@
 }
 
 .hero__button {
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
   padding: 22px 89px;
-  color: $primary-white;
-  text-transform: uppercase;
-  background-color: transparent;
   border: 2px solid $primary-white;
+  color: $primary-white;
 }

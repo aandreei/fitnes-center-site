@@ -1,0 +1,138 @@
+.price {
+  background-color: $secondary-white;
+  padding: 40px 15px;
+}
+
+.price__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.price__list-time {
+  display: flex;
+  width: 290px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $border-disabled;
+}
+
+.price__button-time {
+  position: relative;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary-dark;
+  background-color: transparent;
+  border: none;
+}
+
+.price__button-time--active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 29px;
+  left: 0;
+  border-bottom: 2px solid $status-tab;
+}
+
+.price__button-time--disabled {
+  color: rgba($primary-dark, 0.5);
+}
+
+.price__list-passes {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price__item-passes {
+  position: relative;
+  background-color: $primary-white;
+  padding: 50px 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.price__item-passes:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.price__item-title {
+  width: 206px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.price__item-description {
+  width: 206px;
+  text-align: center;
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.price__item-price {
+  margin-left: 37px;
+}
+
+.price__item-background {
+  position: absolute;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: $background-price;
+  margin: 0;
+  left: 64px;
+  bottom: 135px;
+}
+
+.price__item-price,
+.price_item-currency {
+  text-align: center;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: $light-dark-text;
+  z-index: 1;
+}
+
+.price_item-currency {
+  color: $primary-dark;
+  width: 30px;
+  margin: 0;
+  margin-left: 7px;
+}
+
+.price__button-buy {
+  display: block;
+  padding: 25px 47px;
+  border: 2px solid $primary-dark;
+  margin-top: 20px;
+}

@@ -1,5 +1,6 @@
 .about {
   background-color: $primary-white;
+  padding-bottom: 40px;
 }
 
 .about__title {
@@ -41,11 +42,11 @@
   margin-bottom: 36px;
 }
 
-.video-wrapper{
+.about_video-wrapper {
   position: relative;
   display: inline-block;
 }
-.video-overlay{
+.about_video-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -55,7 +56,7 @@
   background-size: cover;
 }
 
-.video-button {
+.about_video-button {
   margin-left: 123px;
   margin-top: 50px;
 }

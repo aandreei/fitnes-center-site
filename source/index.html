@@ -26,7 +26,7 @@
         <p class="hero__text-city">Омск</p>
         <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
         <h1 class="hero__title">Фитнес центр</h1>
-        <button class="hero__button" type="button">Купить абонемент</button>
+        <button class="hero__button button" type="button">Купить абонемент</button>
         <picture>
           <source type="image/webp" media="(min-width:1440px)" srcset="img/hero/hero-img-desktop.webp 1x, img/hero/hero-img-desktop@2x.webp 2x" width="500" height="524">
           <source type="image/webp" media="(min-width:768px)" srcset="img/hero/hero-img-tablet.webp 1x, img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
@@ -51,9 +51,9 @@
           <img class="about__img" src="img/background/main-img-mobile.png" loading="lazy" srcset="img/background/main-img-mobile@2x.png 2x" width="320" height="280" alt="Тренажерный зал SUPERGYM">
         </picture>
 
-        <div class="video-wrapper">
-          <div class="video-overlay">
-            <svg class="video-button" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="about_video-wrapper">
+          <div class="about_video-overlay">
+            <svg class="about_video-button" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle opacity="0.2" cx="36" cy="36" r="35" stroke="#ED0233" stroke-width="2"/>
               <circle cx="36" cy="36" r="26" fill="url(#paint0_linear_1330_109)"/>
               <path d="M42 36L33 41.1962L33 30.8038L42 36Z" fill="white"/>
@@ -74,33 +74,39 @@
         <h2 class="price__title">Абонементы</h2>
         <ul class="price__list-time">
           <li class="price__item-time">
-            <button class="price__button-time" type="button">1 месяц</button>
+            <button class="price__button-time price__button-time--active" type="button">1 месяц</button>
           </li>
           <li class="price__item-time">
-            <button class="price__button-time" type="button">6 месяцев</button>
+            <button class="price__button-time price__button-time--disabled" type="button">6 месяцев</button>
           </li>
           <li class="price__item-time">
-            <button class="price__button-time" type="button">12 месяцев</button>
+            <button class="price__button-time price__button-time--disabled" type="button">12 месяцев</button>
           </li>
         </ul>
         <ul class="price__list-passes">
           <li class="price__item-passes">
             <h3 class="price__item-title">С тренером</h3>
             <p class="price__item-description">12 занятий</p>
-            <span class="price__item-price">5000&#8381;</span>
-            <button class="price__button-buy" type="button">Купить абонемент</button>
+            <p class="price__item-background">5000</p>
+            <span class="price__item-price">5000</span>
+            <span class="price_item-currency">&#8381;</span>
+            <button class="price__button-buy button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item-passes">
             <h3 class="price__item-title">Дневной</h3>
             <p class="price__item-description">с 8:00 до 17:00</p>
-            <span class="price__item-price">1700&#8381;</span>
-            <button class="price__button-buy" type="button">Купить абонемент</button>
+            <p class="price__item-background">1700</p>
+            <span class="price__item-price">1700</span>
+            <span class="price_item-currency">&#8381;</span>
+            <button class="price__button-buy button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item-passes">
             <h3 class="price__item-title">Полный день</h3>
             <p class="price__item-description">с 8:00 до 22:00</p>
-            <span class="price__item-price">2700&#8381;</span>
-            <button class="price__button-buy" type="button">Купить абонемент</button>
+            <p class="price__item-background">2700</p>
+            <span class="price__item-price">2700</span>
+            <span class="price_item-currency">&#8381;</span>
+            <button class="price__button-buy button" type="button">Купить абонемент</button>
           </li>
         </ul>
       </section>
