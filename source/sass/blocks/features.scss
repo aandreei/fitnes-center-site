@@ -1,0 +1,119 @@
+.features {
+  padding: 40px 0;
+  background-color: $secondary-white;
+}
+
+.features__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.features ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.features li {
+  padding: 0 15px;
+  margin-bottom: 35px;
+}
+
+.features li:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.features li:nth-child(3) {
+  padding: 30px 75px;
+  margin-bottom: 40px;
+}
+
+.features li span:nth-child(1) {
+  display: block;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: transparent;
+  background-clip: text;
+  background-image: $gradient-additional;
+  color: $gradient-additional;
+  margin: 0;
+  text-align: center;
+}
+
+.features li span:nth-child(2) {
+  display: block;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: transparent;
+  background-clip: text;
+  background-image: $gradient-additional;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.features li p:nth-child(3) {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $primary-dark;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.features li p:nth-child(4) {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-dark;
+  text-align: center;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.features li:nth-child(3) {
+  background-color: $secondary-dark;
+}
+
+.features li:nth-child(3) span:nth-child(1) {
+  display: block;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: $primary-white;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features li:nth-child(3) p:nth-child(2) {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $primary-white;
+  text-align: center;
+}
+
+.features li:nth-child(3) p:nth-child(3) {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-white;
+  text-align: center;
+  text-align: center;
+}
