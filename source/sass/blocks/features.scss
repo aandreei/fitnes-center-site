@@ -34,6 +34,10 @@
   margin-bottom: 40px;
 }
 
+.features li:nth-child(5) {
+  margin-bottom: 0;
+}
+
 .features li span:nth-child(1) {
   display: block;
   font-family: $primary-font;

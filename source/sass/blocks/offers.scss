@@ -1,0 +1,117 @@
+.offers {
+  padding: 40px 0;
+}
+
+.offers__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.offers__wrapper {
+  background-color: $background-banner;
+  padding: 30px;
+  margin: 0;
+}
+
+.offers__wrapper p:nth-child(1) {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $primary-white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.offers__wrapper p:nth-child(2) {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: $primary-white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.offers__wrapper p:nth-child(3) {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.offers__detail,
+.offers__detail-sale {
+  width: 73px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary-white;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-bottom: 1px solid $primary-white;
+  padding-bottom: 5px;
+}
+
+.offers__image {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.offers__list {
+  padding: 0 15px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.offers__item {
+  padding: 20px;
+  background:
+  linear-gradient(#ffffff, #ffffff) padding-box,
+  $gradient-offers border-box;
+  border: 7px solid transparent;
+}
+
+.offers__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.offers__item p:nth-child(1) {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $secondary-dark;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.offers__item p:nth-child(2) {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $secondary-dark;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.offers__detail-sale {
+  color: $secondary-dark;
+  border-bottom: 1px solid $offers-detail;
+}
