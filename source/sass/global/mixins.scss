@@ -1,0 +1,7 @@
+@mixin bg-icon($bg-color: transparent, $bg-image, $bg-size: 30px 30px) {
+  background-color: $bg-color;
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  background-position: center;
+}

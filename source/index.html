@@ -249,26 +249,34 @@
       <section class="faq" data-test="faq">
         <h2 class="faq__title">Вопросы и ответы</h2>
         <ul class="faq__list-navigation">
-          <li class="faq__item-navigation faq__item-navigation--active">Центр</li>
-          <li class="faq__item-navigation">Абонемент</li>
-          <li class="faq__item-navigation">Услуги</li>
-          <li class="faq__item-navigation">Правила</li>
+          <li class="faq__item-navigation faq__item-navigation--active">
+            <h3 class="faq__item-navigation-title faq__item-navigation-title--active">Центр</h3>
+          </li>
+          <li class="faq__item-navigation">
+            <h3 class="faq__item-navigation-title">Абонемент</h3>
+          </li>
+          <li class="faq__item-navigation">
+            <h3 class="faq__item-navigation-title">Услуги</h3>
+          </li>
+          <li class="faq__item-navigation">
+            <h3 class="faq__item-navigation-title">Правила</h3>
+          </li>
         </ul>
         <ul class="faq__list-center">
-          <li class="faq__item-center">
+          <li class="faq__item-center faq__item-center--active">
             <p>Как стать членом фитнес-центра?</p>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
           </li>
           <li class="faq__item-center">
-            <p>Где можно посмотреть расписание?</p>
+            <p>Где можно посмотреть расписание?</p>
             <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
           </li>
           <li class="faq__item-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Есть кулеры в центре? Предоставляются полотенца?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus enim fuga quam odio porro praesentium sapiente vero hic, officia dolor</p>
           </li>
           <li class="faq__item-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus enim fuga quam odio porro praesentium sapiente vero hic, officia dolor</p>
           </li>
         </ul>
@@ -334,14 +342,16 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <picture>
-                <source type="image/webp" media="(min-width:768px)" srcset="img/feedback/icon-user-tablet.webp 1x, img/feedback/icon-user-tablet@2x.webp 2x" width="80" height="80">
-                <source type="image/webp" media="(min-width:320px)" srcset="img/feedback/icon-user-mobile.webp 1x, img/feedback/icon-user-mobile@2x.webp 2x" width="68" height="68">
-                <source type="image/png" media="(min-width:768px)" srcset="img/feedback/icon-user-tablet.png 1x, img/feedback/icon-user-tablet@2x.png 2x" width="80" height="80">
-                <img class="swiper-slide__image" src="img/feedback/icon-user-mobile.png" loading="lazy" srcset="img/feedback/icon-user-mobile@2x.png 2x" width="68" height="68" alt="Аватар пользователя оставившего отзыв">
-              </picture>
-              <span>Анна Орлова</span>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width:768px)" srcset="img/feedback/icon-user-tablet.webp 1x, img/feedback/icon-user-tablet@2x.webp 2x" width="80" height="80">
+                  <source type="image/webp" media="(min-width:320px)" srcset="img/feedback/icon-user-mobile.webp 1x, img/feedback/icon-user-mobile@2x.webp 2x" width="68" height="68">
+                  <source type="image/png" media="(min-width:768px)" srcset="img/feedback/icon-user-tablet.png 1x, img/feedback/icon-user-tablet@2x.png 2x" width="80" height="80">
+                  <img src="img/feedback/icon-user-mobile.png" loading="lazy" srcset="img/feedback/icon-user-mobile@2x.png 2x" width="68" height="68" alt="Аватар пользователя оставившего отзыв">
+                </picture>
+              </div>
+              <p>Анна Орлова</p>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -353,50 +363,60 @@
 
       <!-- секция для оформления заявки -->
       <section class="form" data-test="form">
-        <h2 class="visually-hidden">Оставьте заявку</h2>
-        <p class="form__description">Бесплатное занятие</p>
+        <h2 class="form__title">Бесплатное занятие</h2>
         <form action="post">
-          <input type="text" placeholder="Имя" required>
-          <input type="tel" placeholder="Телефон" required>
-          <button type="submit">Отправить</button>
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="form__input" id="name" type="text" placeholder="Имя" required>
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input class="form__input" id="tel" type="number" placeholder="Телефон" required>
+          <button class="form__button button" type="submit">Отправить</button>
         </form>
       </section>
 
       <!-- подвал страницы -->
       <section class="footer" data-test="footer">
-        <h2 class="footer__title">Контакты</h2>
-        <h3 class="footer__subtitle">Адрес:</h3>
-        <p class="footer__description">г. Омск, ул. 60 лет Октября, 7</p>
-        <h3 class="footer__subtitle">График работы:</h3>
-        <p class="footer__description">Пн-Вс: с 8:00 до 22:00</p>
-        <h3 class="footer__subtitle">Телефон:</h3>
-        <a class="footer__link" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
-        <h3 class="footer__subtitle">Email:</h3>
-        <p class="footer__description">oмск@supergym.ru</p>
-        <picture>
-          <img class="footer__logo" src="" alt="">
-        </picture>
-        <ul class="footer__list-navigation">
-          <li class="footer__item-navigation">Услуги</li>
-          <li class="footer__item-navigation">Абонементы</li>
-          <li class="footer__item-navigation">Акции</li>
-          <li class="footer__item-navigation">Тренеры</li>
-          <li class="footer__item-navigation">Тренеры</li>
-        </ul>
-        <ul class="footer__list-social">
-          <li class="footer__item-social">
-            <p class="visually-hidden">Вконтакте</p>
-            <a href=""></a>
-          </li>
-          <li class="footer__item-social">
-            <p class="visually-hidden">Одноклассники</p>
-            <a href=""></a>
-          </li>
-          <li class="footer__item-social">
-            <p class="visually-hidden">Reddit</p>
-            <a href=""></a>
-          </li>
-        </ul>
+        <div class="footer__wrapper-contacts">
+          <h2 class="footer__title">Контакты</h2>
+          <h3 class="footer__subtitle">Адрес:</h3>
+          <p class="footer__description">г. Омск, ул. 60 лет Октября, 7</p>
+          <h3 class="footer__subtitle">График работы:</h3>
+          <p class="footer__description">Пн-Вс: с 8:00 до 22:00</p>
+          <h3 class="footer__subtitle">Телефон:</h3>
+          <a class="footer__link-number" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
+          <h3 class="footer__subtitle">Email:</h3>
+          <p class="footer__description">oмск@supergym.ru</p>
+        </div>
+        <div class="footer__wrapper-social">
+          <picture>
+            <source type="image/svg+xml" width="130" height="26" srcset="img/logo/logo.svg" media="(min-width: 1440px)">
+            <source type="image/svg+xml" width="110" height="22" srcset="img/logo/logo.svg" media="(min-width: 768px)">
+            <img class="footer__logo-pictures" src="img/logo/logo.svg" loading="lazy" width="100" height="20" alt="Логотип компании SUPERGYM">
+          </picture>
+          <ul class="footer__list-navigation">
+            <li class="footer__item-navigation">Услуги</li>
+            <li class="footer__item-navigation">Абонементы</li>
+            <li class="footer__item-navigation">Акции</li>
+            <li class="footer__item-navigation">Тренеры</li>
+            <li class="footer__item-navigation">Тренеры</li>
+          </ul>
+          <ul class="footer__list-social">
+            <li class="footer__item-social">
+              <a class="footer__link footer__link--vk" href="">
+                <p class="visually-hidden">Вконтакте</p>
+              </a>
+            </li>
+            <li class="footer__item-social">
+              <a class="footer__link footer__link--ok" href="">
+                <p class="visually-hidden">Одноклассники</p>
+              </a>
+            </li>
+            <li class="footer__item-social">
+              <a class="footer__link footer__link--reddit" href="">
+                <p class="visually-hidden">Reddit</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
     </main>

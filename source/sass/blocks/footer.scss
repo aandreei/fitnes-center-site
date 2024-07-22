@@ -1,0 +1,113 @@
+.footer__wrapper-contacts {
+  background-color: $primary-white;
+  padding: 40px 15px;
+}
+
+.footer__wrapper-social {
+  background-color: $background-dark-footer;
+  padding: 40px 15px;
+}
+
+.footer__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  text-align: left;
+}
+
+.footer__subtitle {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $primary-dark;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.footer__description,
+.footer__link-number {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-dark;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__wrapper-contacts p:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.footer__link-number {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+
+.footer__logo-pictures {
+  margin-bottom: 30px;
+}
+
+.footer__list-navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+  margin-bottom: 30px;
+}
+
+.footer__item-navigation {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-white;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list-social {
+  height: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.footer__link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link--vk::before {
+  @include bg-icon(transparent, url("../../img/social/vk.svg"), 100%);
+}
+
+.footer__link--ok::before {
+  @include bg-icon(transparent, url("../../img/social/ok.svg"), 100%);
+}
+
+.footer__link--reddit::before {
+  @include bg-icon(transparent, url("../../img/social/reddit.svg"), 100%);
+}

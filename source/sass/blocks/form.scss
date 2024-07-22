@@ -1,0 +1,47 @@
+.form {
+  background-color: $primary-dark;
+  padding: 70px 15px;
+}
+
+.form__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $primary-white;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  text-align: center;
+}
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $offers-detail;
+  width: 290px;
+  margin-bottom: 36px;
+  padding: 0;
+  padding-bottom: 4px;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-white;
+}
+
+
+.form__input::placeholder {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba($primary-white, 0.4);
+}
+
+.form__button {
+  display: block;
+  color: $primary-white;
+  border: 2px solid $primary-white;
+  padding: 22px 112px;
+}
