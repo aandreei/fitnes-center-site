@@ -45,18 +45,55 @@
 .about_video-wrapper {
   position: relative;
   display: inline-block;
+  height: 170px;
 }
+
 .about_video-overlay {
-  position: absolute;
+  width: 320px;
+  height: 170px;
+  position: relative;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   background-image: image-set("../../img/background/video-mobile.png" 1x, "../../img/background/video-mobile@2x.png" 2x);
   background-size: cover;
+  z-index: 1;
 }
 
 .about_video-button {
-  margin-left: 123px;
-  margin-top: 50px;
+  margin-left: 137px;
+  margin-top: 59px;
+  position: relative;
+  padding: 20px;
+}
+
+.about_video {
+  position: absolute;
+  top: 0;
+}
+
+.about_video-overlay::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background: $gradient-button;
+  top: 58px;
+  left: 134px;
+  border-radius: 50%;
+}
+
+.about_video-overlay::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width:72px;
+  height: 72px;
+  background: transparent;
+  top: 47px;
+  left: 122px;
+  border-radius: 50%;
+  border: 2px solid rgba($background-banner, 0.2);
 }
