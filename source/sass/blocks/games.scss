@@ -7,6 +7,11 @@
     grid-template-columns: 300px 378px;
     padding: 60px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 500px 660px;
+    padding: 100px 103px;
+  }
 }
 
 .games__wrapper {
@@ -18,6 +23,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px 98px;
+    column-gap: 82px;
   }
 }
 
@@ -32,6 +42,12 @@
   color: $primary-white;
   grid-column: 1/2;
   grid-row: 1/3;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    font-size: 82px;
+    line-height: 96px;
+  }
 }
 
 .games__wrapper-data {
@@ -44,6 +60,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
     width: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
   }
 }
 
@@ -73,6 +93,10 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+  }
 }
 
 .games__value-number {
@@ -80,6 +104,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 10px 5px 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
   }
 }
 
@@ -96,6 +124,11 @@
   font-size: 24px;
   line-height: 24px;
   color: $primary-white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__value-data {
@@ -123,6 +156,11 @@
   margin: 16px 0 16px;
   grid-column: -1/1;
   grid-row: 3/4;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .games__button {
@@ -135,6 +173,11 @@
   @media (min-width: $tablet-width) {
     width: 220px;
     padding: 24px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    padding: 21px 54px;
   }
 }
 

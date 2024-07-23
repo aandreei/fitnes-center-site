@@ -1,6 +1,6 @@
 .footer__wrapper-contacts {
   background-color: $primary-white;
-  padding: 40px 15px;
+  padding: 0 15px 40px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -32,7 +32,7 @@
   color: $primary-dark;
   margin: 0;
   margin-bottom: 42px;
-  padding: 0;
+  padding: 40px 15px 0;
   text-align: left;
 
   @media (min-width: $tablet-width) {

@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 30px 20px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
 }
 
 .juri__title {
@@ -28,6 +32,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .juri__swiper-wrapper {
@@ -37,6 +45,11 @@
     padding: 0 59px;
     gap: 20px 40px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1160px;
   }
 }
 
@@ -55,6 +68,10 @@
     right: 10px;
     top: 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: -66px;
+  }
 }
 
 .juri__swiper-wrapper::after {
@@ -72,6 +89,10 @@
     left: 10px;
     top: 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: -66px;
+  }
 }
 
 .juri__slide-image {
@@ -86,14 +107,31 @@
 }
 
 .juri__swiper-wrapper .juri__swiper-slide:nth-child(2) {
-  display: inline-block;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(3),
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(4) {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
 
 .juri__swiper-slide {
   position: relative;
   width: 260px;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .juri__slide-text {

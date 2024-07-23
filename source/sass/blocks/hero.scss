@@ -9,6 +9,12 @@
     grid-template-columns: 113px 26px 185px 30px 324px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 135px 149px 270px 56px 550px;
+    padding: 30px 103px 120px;
+    margin-bottom: 0;
+  }
 }
 
 .hero__img-wrapper {
@@ -45,6 +51,15 @@
     padding-top: 31px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-size: 54px;
+    line-height: 54px;
+    padding-top: 52px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__description {
@@ -67,6 +82,11 @@
     padding-right: 26px;
     line-height: 22px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
 
@@ -92,6 +112,14 @@
     line-height: 85px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    font-size: 92px;
+    line-height: 110px;
+    text-align: right;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__button {
@@ -104,5 +132,10 @@
     grid-row: 4/5;
     padding: 20px 0;
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0;
+    margin-bottom: 52px;
   }
 }
