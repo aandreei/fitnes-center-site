@@ -14,20 +14,20 @@
   text-align: center;
 }
 
-.swiper-slide__image {
+.swiper__slide-image {
   display: block;
   margin: 0 auto;
 }
 
-.swiper-slide__image--other {
+.swiper__slide-image--other {
   display: none;
 }
 
-.swiper-slide {
+.swiper__slide {
   position: relative;
 }
 
-.swiper-slide__text {
+.swiper__slide-text {
   position: absolute;
   font-family: $primary-font;
   font-weight: 400;
