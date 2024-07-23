@@ -1,6 +1,10 @@
 .form {
   background-color: $primary-dark;
   padding: 70px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
 }
 
 .form__title {
@@ -13,9 +17,24 @@
   margin-bottom: 36px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
-.form__input {
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 205px 205px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+}
+
+.form__input-name,
+.form__input-number {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $offers-detail;
@@ -28,8 +47,23 @@
   font-size: 14px;
   line-height: 22px;
   color: $primary-white;
+
+  @media (min-width: $tablet-width) {
+    width: 205px;
+  }
 }
 
+.form__input-name {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__input-number {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+}
 
 .form__input::placeholder {
   font-family: $primary-font;
@@ -44,4 +78,10 @@
   color: $primary-white;
   border: 2px solid $primary-white;
   padding: 22px 112px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -1/1;
+    width: 440px;
+    padding: 25px 112px;
+  }
 }

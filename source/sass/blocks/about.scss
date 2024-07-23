@@ -1,6 +1,11 @@
 .about {
   background-color: $primary-white;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 75px;
+  }
 }
 
 .about__title {
@@ -12,6 +17,14 @@
   margin: 0;
   margin-bottom: 12px;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    padding: 0 45px;
+    text-align: center;
+  }
 }
 
 .about__description {
@@ -20,13 +33,24 @@
   font-size: 18px;
   line-height: 20px;
   color: $primary-dark;
-  display: inline-block;
   margin: 0;
   margin-bottom: 36px;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
-.about p {
+.about br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about p:nth-child(3) {
   font-family: $primary-font;
   font-weight: 300;
   font-size: 14px;
@@ -35,19 +59,40 @@
   margin: 0;
   margin-bottom: 36px;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 45px;
+    margin: 0 auto 36px;
+    text-align: center;
+  }
 }
 
 .about__img {
   display: block;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 36px;
+  }
 }
 
 .about_video-wrapper {
   display: grid;
   grid-template-columns: 320px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 270px;
+    bottom: 35px;
+    left: 249px;
+  }
 }
 
 .about_video-overlay {
+  object-fit: contain;
   width: 320px;
   position: relative;
   left: 0;
@@ -59,6 +104,11 @@
   z-index: 1;
   grid-column: 1/2;
   grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    background-image: image-set("../../img/background/video-tablet.png" 1x, "../../img/background/video-tablet@2x.png" 2x);
+  }
 }
 
 .about_video-button {
@@ -66,6 +116,10 @@
   margin-top: 59px;
   position: relative;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 109px;
+  }
 }
 
 .about_video {
@@ -74,6 +128,10 @@
   line-height: 0;
   grid-column: 1/2;
   grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
 }
 
 .about_video-overlay::before {
@@ -86,6 +144,10 @@
   top: 58px;
   left: 134px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 107px;
+  }
 }
 
 .about_video-overlay::after {
@@ -99,4 +161,8 @@
   left: 122px;
   border-radius: 50%;
   border: 2px solid rgba($background-banner, 0.2);
+
+  @media (min-width: $tablet-width) {
+    left: 96px;
+  }
 }

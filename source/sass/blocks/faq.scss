@@ -1,6 +1,10 @@
 .faq {
   padding: 70px 15px;
   background-color: $secondary-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
 }
 
 .faq__title {
@@ -13,6 +17,12 @@
   margin-bottom: 35px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 45px;
+  }
 }
 
 .faq__list-navigation {
@@ -23,10 +33,19 @@
   margin-bottom: 35px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .faq__item-navigation {
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 4px 0;
+  }
 }
 
 .faq__item-navigation:not(:first-child) {
@@ -42,6 +61,11 @@
   margin: 0;
   padding: 14px 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .faq__item-navigation--active {
@@ -72,6 +96,18 @@
   row-gap: 20px;
   padding: 20px 0;
   border-top: 1px solid $offers-detail;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 615px 1fr;
+  }
+}
+
+.faq__list-center li:nth-child(4) br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .faq__item-center:last-child {
@@ -89,6 +125,11 @@
   text-align: left;
   grid-column: 1/2;
   grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .faq__item-center p:nth-child(2) {
@@ -103,6 +144,12 @@
   grid-column: 1/3;
   grid-row: 2/3;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 559px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .faq__item-center--active p:nth-child(2) {
@@ -118,6 +165,11 @@
   grid-row: 1/2;
 
   @include bg-icon(transparent, url("../../img/icon-svg/faq-button-open.svg"), 100%);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .faq__item-center--active::before {
@@ -129,4 +181,9 @@
   grid-row: 1/2;
 
   @include bg-icon(transparent, url("../../img/icon-svg/faq-button-closed.svg"), 100%);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

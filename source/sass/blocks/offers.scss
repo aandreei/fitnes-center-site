@@ -1,5 +1,12 @@
 .offers {
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+    display: grid;
+    grid-template-columns: 278px 400px;
+    row-gap: 35px;
+  }
 }
 
 .offers__title {
@@ -11,12 +18,24 @@
   margin: 0;
   margin-bottom: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 0;
+    grid-column: -1/1;
+  }
 }
 
 .offers__wrapper {
   background-color: $background-banner;
   padding: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 218px;
+    grid-column: 1/2;
+  }
 }
 
 .offers__wrapper p:nth-child(1) {
@@ -28,6 +47,13 @@
   text-align: center;
   margin: 0;
   margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .offers__wrapper p:nth-child(2) {
@@ -39,6 +65,13 @@
   text-align: center;
   margin: 0;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .offers__wrapper p:nth-child(3) {
@@ -50,6 +83,13 @@
   text-align: center;
   margin: 0;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 180px;
+  }
 }
 
 .offers__detail,
@@ -64,17 +104,34 @@
   text-transform: uppercase;
   border-bottom: 1px solid $primary-white;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .offers__image {
   display: block;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    margin-bottom: 0;
+  }
 }
 
 .offers__list {
   padding: 0 15px;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -1/1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .offers__item {
@@ -83,10 +140,18 @@
   linear-gradient(#ffffff, #ffffff) padding-box,
   $gradient-offers border-box;
   border: 7px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 271px;
+  }
 }
 
 .offers__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .offers__item p:nth-child(1) {
@@ -98,6 +163,13 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 
 .offers__item p:nth-child(2) {
@@ -109,6 +181,19 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+.offers__item:nth-child(2) p:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .offers__detail-sale {

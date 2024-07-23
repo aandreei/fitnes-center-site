@@ -1,6 +1,12 @@
 .games {
   background-color: $primary-white;
   padding: 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 378px;
+    padding: 60px 45px;
+  }
 }
 
 .games__wrapper {
@@ -8,7 +14,11 @@
   padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 37px;
+  column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .games__title {
@@ -30,11 +40,20 @@
   grid-column: 2/3;
   grid-row: 1/2;
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    width: 83px;
+  }
 }
 
 .games__wrapper-time {
   grid-column: 2/3;
   grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    width: 83px;
+  }
 }
 
 .games__parametr {
@@ -48,10 +67,26 @@
   border-bottom: 1px solid $primary-white;
   grid-column: -1/1;
   grid-row: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 83px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .games__value-number {
   grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 5px 10px 0;
+  }
+}
+
+.games__value-time {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
 }
 
 .games__value-number,
@@ -72,6 +107,11 @@
   color: $primary-white;
   margin: 0;
   grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games__description {
@@ -91,4 +131,15 @@
   padding: 22px 50px;
   grid-column: -1/1;
   grid-row: 4/5;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    padding: 24px 54px;
+  }
+}
+
+.games__img {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

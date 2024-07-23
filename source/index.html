@@ -27,18 +27,20 @@
         <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
         <h1 class="hero__title">Фитнес центр</h1>
         <button class="hero__button button" type="button">Купить абонемент</button>
-        <picture>
-          <source type="image/webp" media="(min-width:1440px)" srcset="img/hero/hero-img-desktop.webp 1x, img/hero/hero-img-desktop@2x.webp 2x" width="500" height="524">
-          <source type="image/webp" media="(min-width:768px)" srcset="img/hero/hero-img-tablet.webp 1x, img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
-          <source type="image/png" media="(min-width:1440px)" srcset="img/hero/hero-img-desktop.png 1x, img/hero/hero-img-desktop@2x.png 2x" width="500" height="524">
-          <img class="hero__img" src="img/hero/hero-img-tablet.png" loading="lazy" srcset="img/hero/hero-img-tablet@2x.png 2x" width="324" height="390" alt="Спортивный мужчина">
-        </picture>
+        <div class="hero__img-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" srcset="img/hero/hero-img-desktop.webp 1x, img/hero/hero-img-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/hero/hero-img-tablet.webp 1x, img/hero/hero-img-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/png" media="(min-width:1440px)" srcset="img/hero/hero-img-desktop.png 1x, img/hero/hero-img-desktop@2x.png 2x" width="500" height="524">
+            <img class="hero__img" src="img/hero/hero-img-tablet.png" loading="lazy" srcset="img/hero/hero-img-tablet@2x.png 2x" width="324" height="390" alt="Спортивный мужчина">
+          </picture>
+        </div>
       </section>
 
       <!-- секция с описанием продукта -->
       <section class="about" data-test="about">
         <h2 class="about__title">Тренажёрный зал</h2>
-        <span class="about__description">Просторный зал площадью 900 кв/м</span>
+        <p class="about__description">Просторный зал площадью 900 кв/м</p>
         <p>Supergym – самый большой фитнес центр<br>
           за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br>
           для всех спортсменов.</p>
@@ -50,7 +52,6 @@
           <source type="image/png" media="(min-width:768px)" srcset="img/background/main-img-tablet.png 1x, img/background/main-img-tablet@2x.png 2x" width="678" height="345">
           <img class="about__img" src="img/background/main-img-mobile.png" loading="lazy" srcset="img/background/main-img-mobile@2x.png 2x" width="320" height="280" alt="Тренажерный зал SUPERGYM">
         </picture>
-
         <div class="about_video-wrapper">
           <div class="about_video-overlay">
             <svg class="about_video-button" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 6-9 5.196V.804L9 6z" fill="#fff"/>
@@ -131,41 +132,37 @@
       <!-- секция с жюри -->
       <section class="juri" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper__slide swiper__slide--active">
+        <div class="juri__swiper">
+          <div class="juri__swiper-wrapper">
+            <div class="juri__swiper-slide juri__swiper-slide--active">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-anna.webp 1x, img/juri/juri-anna@2x.webp 2x" width="260" height="300">
-                <img class="swiper__slide-image" src="img/juri/juri-anna.jpg" loading="lazy" srcset="img/juri/juri-anna@2x.jpg 2x" width="260" height="300" alt="Член жюри - Анна">
+                <img class="juri__slide-image" src="img/juri/juri-anna.jpg" loading="lazy" srcset="img/juri/juri-anna@2x.jpg 2x" width="260" height="300" alt="Член жюри - Анна">
               </picture>
-              <p class="swiper__slide-text"></p>
+              <p class="juri__slide-text">Анна Павлова</p>
             </div>
-            <div class="swiper__slide">
+            <div class="juri__swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-alexei.webp 1x, img/juri/juri-alexei@2x.webp 2x" width="260" height="300">
-                <img class="swiper__slide-image swiper__slide-image--other" src="img/juri/juri-alexei.jpg" loading="lazy" srcset="img/juri/juri-alexei@2x.jpg 2x" width="260" height="300" alt="Член жюри - Алексей">
+                <img class="juri__slide-image" src="img/juri/juri-alexei.jpg" loading="lazy" srcset="img/juri/juri-alexei@2x.jpg 2x" width="260" height="300" alt="Член жюри - Алексей">
               </picture>
-              <p class="swiper__slide-text"></p>
+              <p class="juri__slide-text">Алексей Лавров</p>
             </div>
-            <div class="swiper__slide">
+            <div class="juri__swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-alexander@2x.webp 1x, img/juri/juri-alexander@2x.webp 2x" width="260" height="300">
-                <img class="swiper__slide-image swiper__slide-image--other" src="img/juri/juri-alexander.jpg" loading="lazy" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Член жюри - Александр">
+                <img class="juri__slide-image" src="img/juri/juri-alexander.jpg" loading="lazy" srcset="img/juri/juri-alexander@2x.jpg 2x" width="260" height="300" alt="Член жюри - Александр">
               </picture>
-              <p class="swiper__slide-text">Анна Павлова</p>
+              <p class="juri__slide-text"></p>
             </div>
-            <div class="swiper__slide">
+            <div class="juri__swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width:320px)" srcset="img/juri/juri-maria@2x.webp 1x, img/juri/juri-maria@2x.webp 2x" width="260" height="300">
-                <img class="swiper__slide-image swiper__slide-image--other" src="img/juri/juri-maria.jpg" loading="lazy" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Член жюри - Мария">
+                <img class="juri__slide-image" src="img/juri/juri-maria.jpg" loading="lazy" srcset="img/juri/juri-maria@2x.jpg 2x" width="260" height="300" alt="Член жюри - Мария">
               </picture>
-              <p class="swiper__slide-text"></p>
+              <p class="juri__slide-text"></p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
         </div>
       </section>
 
@@ -267,7 +264,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus enim fuga quam odio porro praesentium sapiente vero hic, officia dolor</p>
           </li>
           <li class="faq__item-center">
-            <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
+            <p>Сколько тренеров работает в клубе и какова<br> их квалификация?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus enim fuga quam odio porro praesentium sapiente vero hic, officia dolor</p>
           </li>
         </ul>
@@ -330,9 +327,9 @@
       <!-- секция с отзывами -->
       <section class="reviews" data-test="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="reviews__swiper">
+          <div class="reviews__swiper-wrapper">
+            <div class="reviews__swiper-slide">
               <div>
                 <picture>
                   <source type="image/webp" media="(min-width:768px)" srcset="img/feedback/icon-user-tablet.webp 1x, img/feedback/icon-user-tablet@2x.webp 2x" width="80" height="80">
@@ -342,32 +339,30 @@
                 </picture>
               </div>
               <p>Анна Орлова</p>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br>нет очередей»</p>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.<br> Зал просторный, даже в вечернее время<br>нет очередей»</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-rewiews__button-prev"></div>
+          <div class="swiper-rewiews__button-next"></div>
         </div>
       </section>
 
       <!-- секция для оформления заявки -->
       <section class="form" data-test="form">
         <h2 class="form__title">Бесплатное занятие</h2>
-        <form action="post">
+        <form class="form__wrapper" action="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя" required>
+          <input class="form__input-name" id="name" type="text" placeholder="Имя" required>
           <label class="visually-hidden" for="tel">Телефон</label>
-          <input class="form__input" id="tel" type="number" placeholder="Телефон" required>
+          <input class="form__input-number" id="tel" type="number" placeholder="Телефон" required>
           <button class="form__button button" type="submit">Отправить</button>
         </form>
       </section>
 
       <!-- подвал страницы -->
       <section class="footer" data-test="footer">
+        <h2 class="footer__title">Контакты</h2>
         <div class="footer__wrapper-contacts">
-          <h2 class="footer__title">Контакты</h2>
           <h3 class="footer__subtitle">Адрес:</h3>
           <p class="footer__description">г. Омск, ул. 60 лет Октября, 7</p>
           <h3 class="footer__subtitle">График работы:</h3>

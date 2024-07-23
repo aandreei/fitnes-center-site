@@ -1,6 +1,10 @@
 .juri {
   background-color: $primary-white;
   padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 20px 60px;
+  }
 }
 
 .juri__title {
@@ -12,22 +16,87 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 46px;
+  }
 }
 
-.swiper__slide-image {
+.juri__swiper {
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+  }
+}
+
+.juri__swiper-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 59px;
+    gap: 20px 40px;
+    position: relative;
+  }
+}
+
+.juri__swiper-wrapper::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    position: absolute;
+    rotate: 45deg;
+    border-top: 1px solid $primary-dark;
+    border-right: 1px solid $primary-dark;
+    z-index: 1;
+    right: 10px;
+    top: 140px;
+  }
+}
+
+.juri__swiper-wrapper::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    position: absolute;
+    rotate: 225deg;
+    border-top: 1px solid $primary-dark;
+    border-right: 1px solid $primary-dark;
+    z-index: 1;
+    left: 10px;
+    top: 140px;
+  }
+}
+
+.juri__slide-image {
   display: block;
   margin: 0 auto;
 }
 
-.swiper__slide-image--other {
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(2),
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(3),
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(4) {
   display: none;
 }
 
-.swiper__slide {
-  position: relative;
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(2) {
+  display: inline-block;
 }
 
-.swiper__slide-text {
+
+.juri__swiper-slide {
+  position: relative;
+  width: 260px;
+  display: inline-block;
+}
+
+.juri__slide-text {
   position: absolute;
   font-family: $primary-font;
   font-weight: 400;
@@ -36,4 +105,8 @@
   color: $primary-white;
   bottom: 3px;
   left: 80px;
+
+  @media (min-width: $tablet-width) {
+    left: 56px;
+  }
 }
