@@ -1,18 +1,4 @@
-.footer__wrapper-contacts {
-  background-color: $primary-white;
-  padding: 0 15px 40px;
-
-  @media (min-width: $tablet-width) {
-    width: 440px;
-    padding: 0 45px 60px;
-    columns: 190px 2;
-    column-gap: 60px;
-    column-rule: 1px solid $offers-detail;
-    margin: 0 auto;
-  }
-}
-
-.footer__wrapper-social {
+.footer {
   background-color: $background-dark-footer;
   padding: 40px 15px;
 
@@ -22,70 +8,11 @@
     padding: 45px 45px 48px;
     gap: 15px 30px;
   }
-}
 
-.footer__title {
-  font-family: $secondary-font;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 32px;
-  color: $primary-dark;
-  margin: 0;
-  margin-bottom: 42px;
-  padding: 40px 15px 0;
-  text-align: left;
-
-  @media (min-width: $tablet-width) {
-    font-size: 54px;
-    line-height: 54px;
-    text-align: center;
-    grid-column: -1/1;
-    grid-row: 1/2;
-    padding-top: 60px;
+  @media (min-width: $desktop-width) {
+    padding: 40px 103px;
+    justify-content: space-between;
   }
-}
-
-.footer__subtitle {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: $primary-dark;
-  margin: 0;
-  margin-bottom: 12px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
-    width: 190px;
-  }
-}
-
-.footer__description,
-.footer__link-number {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $primary-dark;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    line-height: 22px;
-    width: 190px;
-  }
-}
-
-.footer__wrapper-contacts p:not(:last-child) {
-  margin-bottom: 28px;
-}
-
-.footer__link-number {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 28px;
 }
 
 .footer__logo-pictures {
@@ -107,6 +34,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    justify-content: space-between;
   }
 }
 

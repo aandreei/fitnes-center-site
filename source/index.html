@@ -255,7 +255,7 @@
         <ul class="faq__list-center">
           <li class="faq__item-center faq__item-center--active">
             <p>Как стать членом фитнес-центра?</p>
-            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету<br>и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
           </li>
           <li class="faq__item-center">
             <p>Где можно посмотреть расписание?</p>
@@ -341,7 +341,7 @@
                 </picture>
               </div>
               <p>Анна Орлова</p>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.<br> Зал просторный, даже в вечернее время<br>нет очередей»</p>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.<br> Зал просторный,<br> даже в вечернее время<br>нет очередей»</p>
             </div>
           </div>
           <div class="swiper-rewiews__button-prev"></div>
@@ -351,62 +351,59 @@
 
       <!-- секция для оформления заявки -->
       <section class="form" data-test="form">
-        <h2 class="form__title">Бесплатное занятие</h2>
         <form class="form__wrapper" action="post">
+          <h2 class="form__title">Бесплатное занятие</h2>
           <label class="visually-hidden" for="name">Имя</label>
           <input class="form__input-name" id="name" type="text" placeholder="Имя" required>
           <label class="visually-hidden" for="tel">Телефон</label>
           <input class="form__input-number" id="tel" type="number" placeholder="Телефон" required>
           <button class="form__button button" type="submit">Отправить</button>
         </form>
+        <div class="form__wrapper-contacts">
+          <h2 class="form__title-contacts">Контакты</h2>
+          <h3 class="form__subtitle">Адрес:</h3>
+          <p class="form__description">г. Омск, ул. 60 лет Октября, 7</p>
+          <h3 class="form__subtitle">График работы:</h3>
+          <p class="form__description">Пн-Вс: с 8:00 до 22:00</p>
+          <h3 class="form__subtitle">Телефон:</h3>
+          <a class="form__link-number" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
+          <h3 class="form__subtitle">Email:</h3>
+          <p class="form__description">oмск@supergym.ru</p>
+        </div>
       </section>
 
       <!-- подвал страницы -->
       <section class="footer" data-test="footer">
-        <h2 class="footer__title">Контакты</h2>
-        <div class="footer__wrapper-contacts">
-          <h3 class="footer__subtitle">Адрес:</h3>
-          <p class="footer__description">г. Омск, ул. 60 лет Октября, 7</p>
-          <h3 class="footer__subtitle">График работы:</h3>
-          <p class="footer__description">Пн-Вс: с 8:00 до 22:00</p>
-          <h3 class="footer__subtitle">Телефон:</h3>
-          <a class="footer__link-number" href="tel:+7 (800) 555-55-55">8 800 555-55-55</a>
-          <h3 class="footer__subtitle">Email:</h3>
-          <p class="footer__description">oмск@supergym.ru</p>
-        </div>
-        <div class="footer__wrapper-social">
-          <picture>
-            <source type="image/svg+xml" width="130" height="26" srcset="img/logo/logo.svg" media="(min-width: 1440px)">
-            <source type="image/svg+xml" width="110" height="22" srcset="img/logo/logo.svg" media="(min-width: 768px)">
-            <img class="footer__logo-pictures" src="img/logo/logo.svg" loading="lazy" width="100" height="20" alt="Логотип компании SUPERGYM">
-          </picture>
-          <ul class="footer__list-navigation">
-            <li class="footer__item-navigation">Услуги</li>
-            <li class="footer__item-navigation">Абонементы</li>
-            <li class="footer__item-navigation">Акции</li>
-            <li class="footer__item-navigation">Тренеры</li>
-            <li class="footer__item-navigation">Тренеры</li>
-          </ul>
-          <ul class="footer__list-social">
-            <li class="footer__item-social">
-              <a class="footer__link footer__link--vk" href="">
-                <p class="visually-hidden">Вконтакте</p>
-              </a>
-            </li>
-            <li class="footer__item-social">
-              <a class="footer__link footer__link--ok" href="">
-                <p class="visually-hidden">Одноклассники</p>
-              </a>
-            </li>
-            <li class="footer__item-social">
-              <a class="footer__link footer__link--reddit" href="">
-                <p class="visually-hidden">Reddit</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <picture>
+          <source type="image/svg+xml" width="130" height="26" srcset="img/logo/logo.svg" media="(min-width: 1440px)">
+          <source type="image/svg+xml" width="110" height="22" srcset="img/logo/logo.svg" media="(min-width: 768px)">
+          <img class="footer__logo-pictures" src="img/logo/logo.svg" loading="lazy" width="100" height="20" alt="Логотип компании SUPERGYM">
+        </picture>
+        <ul class="footer__list-navigation">
+          <li class="footer__item-navigation">Услуги</li>
+          <li class="footer__item-navigation">Абонементы</li>
+          <li class="footer__item-navigation">Акции</li>
+          <li class="footer__item-navigation">Тренеры</li>
+          <li class="footer__item-navigation">Тренеры</li>
+        </ul>
+        <ul class="footer__list-social">
+          <li class="footer__item-social">
+            <a class="footer__link footer__link--vk" href="">
+              <p class="visually-hidden">Вконтакте</p>
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__link footer__link--ok" href="">
+              <p class="visually-hidden">Одноклассники</p>
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__link footer__link--reddit" href="">
+              <p class="visually-hidden">Reddit</p>
+            </a>
+          </li>
+        </ul>
       </section>
-
     </main>
 
     <script type="module" src="js/main.js"></script>
