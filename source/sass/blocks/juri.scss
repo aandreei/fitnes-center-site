@@ -53,20 +53,57 @@
   }
 }
 
-.juri__swiper-wrapper::before {
+.juri__swiper-button {
   @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background-color: transparent;
+    width: 16px;
+    height: 32px;
     position: absolute;
-    rotate: 45deg;
-    border-top: 1px solid $primary-dark;
-    border-right: 1px solid $primary-dark;
     z-index: 1;
-    right: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
     top: 140px;
+    padding: 22px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+
+  &:hover {
+    border: 1px solid $primary-dark;
+  }
+
+  &:focus {
+    border: 1px solid $primary-dark;
+    background-color: $background-price;
+  }
+
+  &:active {
+    border: 1px solid $primary-dark;
+    background-color: $primary-dark;
+  }
+}
+
+
+.juri__swiper-button:active::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 38px;
+  top: 3px;
+  left: 13px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: $primary-white;
+  transition: background 250ms ease-in-out;
+}
+
+.juri__swiper-button--next {
+  @media (min-width: $tablet-width) {
+    rotate: 180deg;
+    background-image: url("../../img/icon-svg/arrow-slider.svg");
+    right: -5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,24 +111,27 @@
   }
 }
 
-.juri__swiper-wrapper::after {
+.juri__swiper-button--next::before {
   @media (min-width: $tablet-width) {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background-color: transparent;
-    position: absolute;
-    rotate: 225deg;
-    border-top: 1px solid $primary-dark;
-    border-right: 1px solid $primary-dark;
+    mask-image: url("../../img/icon-svg/arrow-slider.svg");
+  }
+}
+
+.juri__swiper-button--prev {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/icon-svg/arrow-slider.svg");
     z-index: 1;
-    left: 10px;
-    top: 140px;
+    left: -5px;
   }
 
   @media (min-width: $desktop-width) {
     left: -66px;
+  }
+}
+
+.juri__swiper-button--prev::before {
+  @media (min-width: $tablet-width) {
+    mask-image: url("../../img/icon-svg/arrow-slider.svg");
   }
 }
 

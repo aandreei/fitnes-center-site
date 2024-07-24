@@ -43,6 +43,7 @@
   background-color: $background-banner;
   padding: 30px;
   margin: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 218px;
@@ -104,7 +105,7 @@
   color: $primary-white;
   text-align: center;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -120,6 +121,8 @@
 
 .offers__detail,
 .offers__detail-sale {
+  position: absolute;
+  display: block;
   width: 73px;
   font-family: $primary-font;
   font-weight: 700;
@@ -127,7 +130,10 @@
   line-height: 14px;
   color: $primary-white;
   margin: 0 auto;
+  padding: 0;
   text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
   border-bottom: 1px solid $primary-white;
   padding-bottom: 5px;
 
@@ -166,6 +172,7 @@
 }
 
 .offers__item {
+  position: relative;
   padding: 20px;
   background:
   linear-gradient(#ffffff, #ffffff) padding-box,
@@ -227,7 +234,7 @@
   color: $secondary-dark;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -251,7 +258,50 @@
   }
 }
 
+.offers__detail {
+  bottom: 30px;
+  left: 120px;
+
+  &:hover {
+    color: rgba($primary-white, 0.8);
+    border-bottom: 1px solid rgba($primary-white, 0.8);
+  }
+
+  &:focus {
+    width: 93px;
+    color: $primary-white;
+    border-bottom: none;
+    border: 1px solid $primary-white;
+    padding: 10px;
+  }
+
+  &:disabled {
+    color: rgba($primary-white, 0.3);
+    border-bottom: 1px solid rgba($primary-white, 0.3);
+  }
+}
+
 .offers__detail-sale {
   color: $secondary-dark;
   border-bottom: 1px solid $offers-detail;
+  bottom: 20px;
+  left: 100px;
+
+  &:hover {
+    color: rgba($secondary-dark, 0.8);
+    border-bottom: 1px solid rgba($secondary-dark, 0.8);
+  }
+
+  &:focus {
+    width: 93px;
+    color: $secondary-dark;
+    border-bottom: none;
+    border: 1px solid $secondary-dark;
+    padding: 10px;
+  }
+
+  &:disabled {
+    color: rgba($secondary-dark, 0.3);
+    border-bottom: 1px solid rgba($secondary-dark, 0.3);
+  }
 }

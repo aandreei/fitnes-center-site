@@ -46,7 +46,6 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  padding-bottom: 10px;
   border-bottom: 2px solid $border-disabled;
 
   @media (min-width: $tablet-width) {
@@ -64,6 +63,9 @@
   color: $primary-dark;
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -74,13 +76,21 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover {
+    color: rgba($primary-dark, 0.7);
+  }
+
+  &:focus {
+    color: $primary-dark;
+  }
 }
 
 .price__button-time--active::before {
   content: "";
   display: block;
   position: absolute;
-  width: 70px;
+  width: 59px;
   top: 29px;
   left: 0;
   border-bottom: 2px solid $status-tab;
@@ -88,6 +98,89 @@
   @media (min-width: $desktop-width) {
     top: 32px;
   }
+}
+
+.price__button-time--six-months:hover::before,
+.price__button-time--twelve-months:hover::before,
+.price__button-time--six-months:focus::before,
+.price__button-time--twelve-months:focus::before,
+.price__button-time--six-months:active::before,
+.price__button-time--twelve-months:active::before,
+.price__button-time--six-months:disabled::before,
+.price__button-time--twelve-months:disabled::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 0;
+}
+
+.price__button-time--six-months:hover::before {
+  width: 77px;
+  border-bottom: 2px solid $border-hover;
+  color: rgba($primary-dark, 0.7);
+}
+
+.price__button-time--six-months:focus::before {
+  width: 77px;
+  border-bottom: 2px solid $primary-dark;
+  color: $primary-dark;
+}
+
+.price__button-time--six-months:active::before {
+  width: 77px;
+  border-bottom: 2px solid $background-banner;
+  color: $primary-dark;
+}
+
+.price__button-time--six-months:disabled::before {
+  width: 77px;
+  border-bottom: 2px solid rgba($primary-dark, 0.3);
+  color: rgba($primary-dark, 0.3);
+}
+
+.price__button-time--twelve-months:hover::before {
+  width: 86px;
+  border-bottom: 2px solid $border-hover;
+  color: rgba($primary-dark, 0.7);
+}
+
+.price__button-time--twelve-months:focus::before {
+  width: 86px;
+  border-bottom: 2px solid $primary-dark;
+  color: $primary-dark;
+}
+
+.price__button-time--twelve-months:active::before {
+  width: 86px;
+  border-bottom: 2px solid $background-banner;
+  color: $primary-dark;
+}
+
+.price__button-time--twelve-months:disabled::before {
+  width: 86px;
+  border-bottom: 2px solid rgba($primary-dark, 0.3);
+  color: rgba($primary-dark, 0.3);
+}
+
+.price__button-time--active:hover::before {
+  border-bottom: 2px solid $border-hover;
+  color: rgba($primary-dark, 0.7);
+}
+
+.price__button-time--active:focus::before {
+  border-bottom: 2px solid $primary-dark;
+  color: $primary-dark;
+}
+
+.price__button-time--active:active::before {
+  border-bottom: 2px solid $background-banner;
+  color: $primary-dark;
+}
+
+.price__button-time--active:disabled::before {
+  border-bottom: 2px solid rgba($primary-dark, 0.3);
+  color: rgba($primary-dark, 0.3);
 }
 
 .price__button-time--disabled {
@@ -242,5 +335,32 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 17px;
+  }
+
+  &:hover {
+    background: $gradient-button;
+    color: $primary-white;
+    border: 2px solid #ed0233;
+    border-image: $gradient-button;
+    border-image-slice: 1;
+  }
+
+  &:focus {
+    color: $primary-white;
+    border: 2px solid $tertiary-dark;
+    background: $gradient-button-focus;
+  }
+
+  &:active {
+    color: rgba($primary-white, 0.7);
+    border: 2px solid #ed0233;
+    border-image: $gradient-button;
+    border-image-slice: 1;
+    background: $gradient-button;
+  }
+
+  &:disabled {
+    border: 2px solid rgba($primary-dark, 0.3);
+    color: rgba($primary-dark, 0.3);
   }
 }

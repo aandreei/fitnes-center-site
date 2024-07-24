@@ -1,12 +1,14 @@
 //colors
 $gradient-background: linear-gradient(to right, #1C3477, #1C3477, #1A3578, #73184B, #B4022A);
 $gradient-button: linear-gradient(to right, #ed0233, #003eb7);
+$gradient-button-focus: linear-gradient(to right, rgba(#ed0233, 0.8), rgba(#003eb7, 0.8) );
 $gradient-additional: linear-gradient(to bottom right, #d10a42, #0041ca);
 $gradient-offers: linear-gradient(to bottom right, #d10a42, #00359f);
 $primary-white: #ffffff;
 $secondary-white: #f8f9fc;
 $primary-dark: #102654;
 $secondary-dark: #1c3374;
+$tertiary-dark: #000000;
 $background-dark-footer: #030a1a;
 $background-price: #e8e8e8;
 $light-dark-text: #103aae;
@@ -15,6 +17,8 @@ $background-banner: #ed0233;
 $status-tab: #d10a42;
 $border-disabled: rgba(120, 120, 120, 0.2);
 $offers-detail: #74819c;
+$border-hover: #787878;
+
 //fonts
 $primary-font: "Roboto Condensed", "Arial", sans-serif;
 $secondary-font: "Alumni Sans", "Arial", sans-serif;

@@ -97,6 +97,27 @@
     width: 440px;
     padding: 25px 112px;
   }
+
+  &:hover {
+    background-color: $primary-white;
+    color: $light-dark-text;
+  }
+
+  &:focus {
+    background-color: rgba($primary-white, 0.5);
+    color: $light-dark-text;
+    border: 2px solid $tertiary-dark;
+  }
+
+  &:active {
+    background-color: $primary-white;
+    color: $primary-dark;
+  }
+
+  &:disabled {
+    color: rgba($primary-white, 0.5);
+    border: rgba($primary-white, 0.5);
+  }
 }
 
 .form__wrapper-contacts {

@@ -126,6 +126,7 @@
   padding: 22px 89px;
   border: 2px solid $primary-white;
   color: $primary-white;
+  background: transparent;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
@@ -137,5 +138,26 @@
   @media (min-width: $desktop-width) {
     padding: 20px 0;
     margin-bottom: 52px;
+  }
+
+  &:hover {
+    background-color: $primary-white;
+    color: $light-dark-text;
+  }
+
+  &:focus {
+    background-color: rgba($primary-white, 0.5);
+    color: $light-dark-text;
+    border: 2px solid $tertiary-dark;
+  }
+
+  &:active {
+    background-color: $primary-white;
+    color: $primary-dark;
+  }
+
+  &:disabled {
+    color: rgba($primary-white, 0.5);
+    border: rgba($primary-white, 0.5);
   }
 }
